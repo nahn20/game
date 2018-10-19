@@ -1,0 +1,114 @@
+.fade {
+   opacity: 1;
+   transition: opacity 5s ease-in-out;
+   -moz-transition: opacity 5s ease-in-out;
+   -webkit-transition: opacity 5s ease-in-out;
+   }
+body{
+    background-color: black;
+    transition: background-color 0.25s ease;
+}
+#dance1{
+    object-position: -8px 0px;
+}
+#dance2{
+    object-position: 8px 0px;
+}
+
+#startGameButton{
+    text-align: center;
+    padding: 1%;
+    margin: 0 auto;
+    margin-top: 10%;
+    width: 40%;
+    font-size: 300%;
+    font-family: "Courier New";
+    color: red;
+    cursor: pointer;
+}
+#controlsButton{
+    text-align: center;
+    padding: 1%;
+    margin: 0 auto;
+    margin-top: 5%;
+    width: 40%;
+    font-size: 200%;
+    font-family: "Courier New";
+    color: red;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: red;
+}
+canvas {
+    border: 1px solid #d3d3d3;
+    background-color: #f1f1f1;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: none;
+}
+/*Gets rid of the stupid blue highlight box*/
+select:focus{ 
+    outline: none;
+}
+select{
+    display: none;
+    font-family: "Courier New";
+}
+#player1Select{
+    background-color: black;
+    color: rgb(31, 0, 149);
+    border-style: none;
+    font-size: 200%;
+    float: left;
+    margin-top: 10%;
+    margin-left: 25%;
+    width: 30%;
+    font-family: "Courier New";
+}
+#player1Select select{
+    color: rgb(31, 0, 149);
+}
+#player2Select{
+    background-color: black;
+    color: rgb(43, 132, 0);
+    border-style: none;
+    font-size: 200%;
+    float: right;
+    margin-top: 10%;
+    margin-right: 15%;
+    width: 30%;
+    font-family: "Courier New";
+}
+#player2Select select{
+    color: rgb(43, 132, 0);
+}
+#mapSelect{
+    background-color: black;
+    color: red;
+    border-style: none;
+    font-size: 200%;
+    margin-top: 25%;
+    font-family: "Courier New";
+    text-align: center;
+}
+/*For some reason I need to have different things even though select box is inside*/
+.selectBox{
+    background-color: black;
+    color: red;
+    border-style: none;
+    font-size: 80%;
+
+}
+#nothingToSeeHere{
+    overflow: auto;
+    color: red;
+    font-size: 500%;
+    left: 25%;
+    position: absolute;
+    margin: 0 auto;
+	top: 40%;
+    font-family: "Courier New";
+}
